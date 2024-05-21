@@ -46,13 +46,13 @@ To run the project properly, it is essential to install and run both the server 
    cd digifly
    ```
 
-   2. Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-   3. Run 
+3. Run 
    ```
    npm run dev
    ```
