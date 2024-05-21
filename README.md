@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Assessment 2024
+
+## Overview
+
+This project is a dynamic and responsive web application created for the Frontend Assessment 2024. The application is built using Next.js with TypeScript, Redux Toolkit for state management, i18n for localization, Tailwind CSS for styling, and Leaflet for maps. The application supports both Arabic and English languages and adheres to the design specifications provided in the Figma file.
+
+## Live Demo 
+
+[View Live Demo on Vercel](https://digifly-task-five.vercel.app/)
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- Redux Toolkit
+- i18n
+- Tailwind CSS
+- Leaflet
+- Axios
+
+## Features
+
+- Fully responsive design
+- Language switcher (Arabic and English)
+- Dynamic and interactive maps using Leaflet
+- State management using Redux Toolkit
+- Integration with Strapi API
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Important Note
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run the project properly, it is essential to install and run both the server and the client locally. Please follow the instructions provided in the [API Documentation](https://github.com/DigiFly-Development/Frontend-Assessment-Backend) to set up and start the server.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/Hossam281/digifly-task
+   cd digifly-task
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run 
+   ```
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
