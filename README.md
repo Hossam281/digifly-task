@@ -43,7 +43,7 @@ To run the project properly, it is essential to install and run both the server 
 
    ```bash
    git clone https://github.com/Hossam281/digifly-task
-   cd digifly
+   cd digifly-task
    ```
 
 2. Install dependencies:
