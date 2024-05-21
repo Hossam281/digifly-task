@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
+import { useTranslation } from "next-i18next";
 
 const Map: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
+  const { i18n } = useTranslation();
 
   const icon = L.icon({ iconUrl: "/images/marker-icon.png" });
   useEffect(() => {
@@ -25,8 +27,15 @@ const Map: React.FC = () => {
       <Marker position={[30.062521291532576, 31.337142607419214]} icon={icon}>
         <Popup>
           <p className="p-2 text-white md:text-[20px]">
-            <span className="text-[#47BC8A] font-bold">Digi</span>{" "}
-            <span className=" font-bold">Fly</span> Company welcomes you
+            {i18n.language === "ar" ? "شركة" : ""}
+            <span className="text-[#47BC8A] font-bold">
+              {" "}
+              {i18n.language === "ar" ? "ديجي" : "Digi"}
+            </span>{" "}
+            <span className=" font-bold">
+              {i18n.language === "ar" ? "فلاي" : "Fly"}
+            </span>{" "}
+            {i18n.language === "ar" ? "ترحب بكم" : "Company welcomes you"}
           </p>
         </Popup>
       </Marker>

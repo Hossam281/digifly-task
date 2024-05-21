@@ -14,15 +14,15 @@ const Home = ({ locale, users }: { locale: string; users: any }) => {
   const { t } = useTranslation("common");
 
   return (
-    <div className="flex flex-col font-poppins gap-40">
+    <div className="flex flex-col  gap-40">
       <div className="container mx-auto px-6  grid grid-cols-1 md:grid-cols-2 mt-28 gap-20">
         <Form />
         <Table users={users} />
       </div>
       <div className="w-full relative">
-        <div className="w-full absolute top-0 h-[70px] bg-gradient-to-b from-white to-transparent z-50"></div>
+        <div className="w-full absolute top-0 h-[50px] bg-gradient-to-b from-white to-transparent z-50"></div>
         <MyMap />
-        <div className="w-full absolute bottom-0 h-[70px] bg-gradient-to-t from-white to-transparent z-50"></div>
+        <div className="w-full absolute bottom-0 h-[50px] bg-gradient-to-t from-white to-transparent z-50"></div>
       </div>
       <TextEditor />
     </div>
