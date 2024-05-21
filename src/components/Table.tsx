@@ -4,6 +4,11 @@ import { useTranslation } from "next-i18next";
 
 const Table: React.FC<{ users: any[] }> = ({ users }) => {
   const { i18n } = useTranslation("common");
+
+
+  if(!users || users.length === 0){
+    return <h3 className="text-[#6D5CBC] font-bold text-lg text center">{i18n.language === "ar" ? "لا يوجد بيانات" : "No data"}</h3>
+  }
   
 
   return (

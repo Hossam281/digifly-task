@@ -14,4 +14,4 @@ const myApp = ({ Component, pageProps }: AppProps) => {
     </Layout>
   );
 };
-export default appWithTranslation(wrapper.withRedux(myApp));
+export default appWithTranslation(myApp);
